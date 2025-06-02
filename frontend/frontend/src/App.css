@@ -1,0 +1,31 @@
+*{
+  /* border: 2px solid red; */
+  /* border: 0; */
+  margin: 0;
+  padding: 0;
+}
+
+.loadingScreen{
+  height: 65vh;
+  font-size: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-updates{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.edit-icon, .delete-icon{
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s;
+}
+
+.edit-icon:hover, .delete-icon:hover{
+  transform: scale(1.2);
+}

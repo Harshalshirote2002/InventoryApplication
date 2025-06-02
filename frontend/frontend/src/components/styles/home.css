@@ -1,0 +1,170 @@
+.home{
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  background-image: url("/home/vacant/Odin/repos/InventoryApplication/frontend/frontend/src/assets/landingPage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sub-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(229, 231, 235, 0.7);
+  text-align: center;
+}
+
+.title {
+  font-size: 54px;
+  font-weight: 900;
+}
+
+.sub-title {
+  font-weight: 400;
+}
+
+.container2 {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 80vh;
+  background-color: oklch(0.984 0.019 200.873);
+}
+
+.home img{
+  box-shadow: 2px 2px 5px oklch(0.709 0.01 56.259);
+}
+
+.home-categories-image {
+  width: 350px;
+  transition: none;
+  aspect-ratio: 0.8;
+  margin-bottom: 20px;
+}
+
+.sub-container2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home-categories-title {
+  font-size: 42px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.home-categories-container {
+  display: flex;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap;
+  padding: 10px;
+  gap: 12px;
+}
+
+.home-category-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-category-card {
+  transition: all 0.5s;
+}
+
+.home-category-card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.home-category-card > p {
+  margin-top: -100px;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(229, 231, 235, 0.7);
+}
+
+.home-category-card > img {
+  padding: 0;
+  margin: 0;
+  transition: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  border-radius: 5px;
+  aspect-ratio: 1.2;
+}
+
+.container3{
+  padding-top: 20px;
+  flex-wrap: wrap-reverse;
+  background-color: oklch(0.956 0.045 203.388);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 80vh;
+}
+
+@media (max-width: 1100px) {
+  .home-categories-image{
+    width: 250px;
+  }
+  .home-category-card > img {
+    width: 150px;
+    margin-bottom: -40px;
+  }
+  .home-category-card > p {
+    font-size: 14px;
+    margin-top: -40px;
+  }
+  .home-categories-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background-image: url("/home/vacant/Odin/repos/InventoryApplication/frontend/frontend/src/assets/landingPage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .title {
+    font-size: 10vw;
+    font-weight: 900;
+  }
+  .home-categories-image{
+    width: 250px;
+  }
+  .home-category-card > img {
+    width: 150px;
+    margin-bottom: -40px;
+  }
+  .home-category-card > p {
+    font-size: 14px;
+    margin-top: -40px;
+  }
+  .home-categories-title {
+    font-size: 36px;
+  }
+}

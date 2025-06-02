@@ -1,0 +1,21 @@
+footer{
+    background-color: oklch(0.984 0.019 200.873);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+footer  img{
+    border: 0;
+    display: flex;
+    width: 25px;
+    transition: all 0.3s;
+    box-shadow: none;
+}
+
+img:hover{
+    transform: rotate(360deg);
+}
