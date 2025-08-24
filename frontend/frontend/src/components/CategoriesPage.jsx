@@ -5,7 +5,7 @@ function PopulateCategories() {
   useEffect(() => {
     // This is where you would fetch categories from the backend
     // For example:
-    fetch('http://localhost:3000/categories')
+    fetch('https://medicalsuppliesinventoryapplication.onrender.com/categories')
       .then(response => response.json())
       .then(data => setItems(data))
       .catch(error => {

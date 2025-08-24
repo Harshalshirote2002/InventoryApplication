@@ -18,7 +18,7 @@ function updateItem(itemToEdit, setItemsState) {
   // Logic to update the item with the given itemId
   console.log(`Updating item with ID: ${itemToEdit.id}`);
   // Here you would typically send a request to the backend to update the item
-  fetch('http://localhost:3000/items', {
+  fetch('https://medicalsuppliesinventoryapplication.onrender.com/items', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -49,7 +49,7 @@ function PopulateItems() {
   useEffect(() => {
     // This is where you would fetch items from the backend
     // For example:
-    fetch('http://localhost:3000/items')
+    fetch('https://medicalsuppliesinventoryapplication.onrender.com/items')
       .then(response => response.json())
       .then(data => setItems(data))
       .catch(error => {
