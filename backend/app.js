@@ -15,7 +15,7 @@ app.use(cors({
 
 app.use("/", indexRouter)
 
-const PORT = 3000;
+const PORT = 5432;
 
 app.listen(PORT, ()=>{
     console.log("Port is live and listening now!")
